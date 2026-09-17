@@ -1,0 +1,16 @@
+@echo off
+cd C:\Users\Dureja\Desktop\bpit-research-erp
+echo Running setup from inside project folder...
+node C:\Users\Dureja\Desktop\setup-files.js
+echo.
+echo Done! Checking files...
+dir pages
+dir pages\api
+echo.
+echo Now running Prisma...
+call npx prisma generate
+call npx prisma db push
+call node prisma/seed.js
+echo.
+echo ALL DONE! Now run: npm run dev
+pause

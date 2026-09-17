@@ -1,0 +1,6 @@
+Database Driver: postgresql
+Username: postgres
+Password: password
+Host: localhost (running locally on your machine)
+Port: 5432 (standard PostgreSQL port)
+Database Name: bpit_research

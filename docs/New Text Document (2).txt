@@ -1,0 +1,17 @@
+# 1. Install all packages
+npm install
+
+# 2. Set up your database (edit .env.local first with your Supabase URL)
+npx prisma db push
+
+# 3. Create default users
+npx ts-node scripts/seed.ts
+
+# 4. Start locally
+npm run dev
+
+# 5. Open browser
+# → http://localhost:3000
+
+# 6. Deploy to Vercel
+# Push to GitHub → import on vercel.com → add env vars → Deploy ✅
